@@ -1,0 +1,69 @@
+.sidebar(data-color='purple', data-background-color='white', data-image='../assets/img/sidebar-1.jpg')
+	//
+		Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+		Tip 2: you can also add an image using data-image tag
+	.logo
+		a.simple-text.logo-normal(href='#')
+			| Muhannad App
+	.sidebar-wrapper
+		ul.nav
+			//- home
+			if active === 'home'
+				li.nav-item.active
+					a.nav-link(href='/')
+						i.material-icons dashboard
+						p Home
+			else 
+				li.nav-item
+					a.nav-link(href='/') 
+						i.material-icons dashboard
+						p Home
+						
+			//- loging
+			if active === 'login'
+				li.nav-item.active
+					a.nav-link(href='/login')
+						i.material-icons person
+						p Login
+			else
+				li.nav-item
+					a.nav-link(href='/login')
+						i.material-icons person
+						p login
+
+			//- work
+			if active === 'work'
+				li.nav-item.active
+					a.nav-link(href='/work')
+						i.material-icons content_paste
+						p Work
+			else 
+				li.nav-item
+					a.nav-link(href='/work')
+						i.material-icons content_paste
+						p Work
+
+			//- li.nav-item
+			//- 	a.nav-link(href='./typography.html')
+			//- 		i.material-icons library_books
+			//- 		p Typography
+
+			//- li.nav-item
+			//- 	a.nav-link(href='./icons.html')
+			//- 		i.material-icons bubble_chart
+			//- 		p Icons
+
+			//- li.nav-item
+			//- 	a.nav-link(href='./map.html')
+			//- 		i.material-icons location_ons
+			//- 		p Maps
+
+			//- li.nav-item
+			//- 	a.nav-link(href='./notifications.html')
+			//- 		i.material-icons notifications
+			//- 		p Notifications
+
+			//- li.nav-item
+			//- 	a.nav-link(href='./rtl.html')
+			//- 		i.material-icons language
+			//- 		p RTL Support
